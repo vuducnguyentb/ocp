@@ -6,9 +6,9 @@ namespace App;
 
 class Checkout
 {
-    public function begin(Receipt $receipt, PaymentMethodInterface $paymentMethod)
+    public function begin(Receipt $receipt)
     {
-        $paymentMethod->acceptPayment($receipt);
+        $this->acceptPayment($receipt);
     }
 
     public function acceptPayment($receipt)
