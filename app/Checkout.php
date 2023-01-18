@@ -10,9 +10,4 @@ class Checkout
     {
         $paymentMethod->acceptPayment($receipt);
     }
-
-    public function acceptPayment($receipt)
-    {
-        // accept the cash.
-    }
 }
